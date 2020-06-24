@@ -20,11 +20,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 80vh min-content 40vw repeat(4, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 62.5em) {
     .container {
-      grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+      grid-template-rows: 6rem 80vh min-content 40vw repeat(4, min-content);
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
   @media only screen and (max-width: 50em) {
     .container {
@@ -132,6 +132,65 @@ body {
       .nav-btn::after {
         transform: translateY(-1.3rem); } }
 
+.toprealtor__content {
+  grid-column: full-start/ col-end 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 4vw; }
+  @media only screen and (max-width: 62.5em) {
+    .toprealtor__content {
+      grid-column: full-start/ col-end 6; } }
+  @media only screen and (max-width: 37.5em) {
+    .toprealtor__content {
+      grid-column: full-start/ col-end 4; } }
+
+.toprealtor__text {
+  font-size: 1.9rem; }
+
+.toprealtor__figure {
+  text-align: center;
+  grid-column: col-end 2 / col-end 4;
+  padding: 2rem;
+  background-color: #c69963;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 62.5em) {
+    .toprealtor__figure {
+      grid-column: col-end 6 / full-end; } }
+  @media only screen and (max-width: 37.5em) {
+    .toprealtor__figure {
+      grid-column: col-end 4 / full-end; } }
+
+.toprealtor__img {
+  padding: 2rem;
+  height: 30rem;
+  border-radius: 0.4rem; }
+
+.toprealtor__caption {
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif; }
+
+.toprealtor__moto {
+  grid-column: col-end 4 / full-end;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/gal-19.jpg");
+  background-position: center;
+  color: #c69963;
+  font-weight: 400;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .toprealtor__moto {
+      grid-column: full-start / full-end;
+      padding: 10rem 5rem; } }
+
 .header {
   background-color: #54483a;
   grid-column: full-start / col-end 6;
@@ -224,7 +283,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
-  align-items: start; }
+  align-items: start;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4)), url("../img/whitebuilding.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50%; }
 
 .feature {
   display: grid;

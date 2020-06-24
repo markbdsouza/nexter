@@ -8,6 +8,13 @@
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
   align-items: start;
+  background-image: linear-gradient(
+      rgba(265, 265, 265, 0.7),
+      rgba(265, 265, 265, 0.4)
+    ),
+    url('../img/whitebuilding.jpg');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
 }
 
 .feature {

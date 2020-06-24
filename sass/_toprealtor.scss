@@ -1,0 +1,76 @@
+.toprealtor {
+  &__content {
+    grid-column: full-start/ col-end 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 4vw;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: full-start/ col-end 6;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: full-start/ col-end 4;
+    }
+  }
+
+  &__text {
+    font-size: 1.9rem;
+  }
+
+  &__figure {
+    text-align: center;
+
+    grid-column: col-end 2 / col-end 4;
+    padding: 2rem;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $bp-large) {
+      grid-column: col-end 6 / full-end;
+    }
+    @media only screen and (max-width: $bp-small) {
+      grid-column: col-end 4 / full-end;
+    }
+  }
+
+  &__img {
+    padding: 2rem;
+    height: 30rem;
+    border-radius: 0.4rem;
+  }
+
+  &__caption {
+    position: absolute;
+
+    font-size: 2rem;
+    color: #fff;
+    font-family: $font-display;
+  }
+
+  &__moto {
+    grid-column: col-end 4 / full-end;
+    background-image: linear-gradient(
+        to right,
+        rgba(#000, 0.6),
+        rgba(#000, 0.3)
+      ),
+      url('../img/gal-19.jpg');
+    background-position: center;
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem;
+    @media only screen and (max-width: $bp-large) {
+      grid-column: full-start / full-end;
+      padding: 10rem 5rem;
+    }
+  }
+}
