@@ -2,7 +2,7 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
 
-  padding: 8rem;
+  padding: 8rem 2rem 3rem;
 }
 
 .nav {
@@ -23,8 +23,6 @@
 
     display: block;
     transition: 0.2s all;
-
-    padding: 1.5rem;
   }
 
   &__link:hover,
@@ -36,6 +34,6 @@
 
 .copyright {
   font-size: 1.5rem;
-  margin: 6rem;
+  margin-top: 4rem;
   text-align: center;
 }
