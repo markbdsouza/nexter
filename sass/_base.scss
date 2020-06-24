@@ -62,3 +62,10 @@ body {
     grid-template-rows: 6rem calc(100vh - 6rem);
   }
 }
+
+a:link,
+a:visited {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
